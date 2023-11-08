@@ -4,7 +4,7 @@ const claimPoap = async (req, res) => {
    try {
       var data = JSON.stringify({
          contract: process.env.CONTRACT_ADDRESS,
-         network: process.env.CHAIN_ID,
+         network: parseInt(process.env.CHAIN_ID),
          to: req.body.inputWallet,
          id: 1,
          amount: 1

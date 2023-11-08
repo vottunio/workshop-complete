@@ -43,8 +43,7 @@ export default function Home() {
   const getMetadata = async (uri) => {
     var config = {
       method: 'get',
-      // url: uri,
-      url: "https://ipfsgw.vottun.tech/ipfs/QmTFqeMP4ytgqCghwsefYAmJWyebguykkRRrRqvfyFcHdg/0.json",
+      url: uri,
       headers: {
         'Content-Type': 'application/json'
       },
